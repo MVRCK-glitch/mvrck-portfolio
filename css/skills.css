@@ -37,7 +37,7 @@ header{
     z-index: 100;
 }
 
-.about-service {
+.about-skills {
     font-size: 40px;
     font-weight: bold;
 }
@@ -75,51 +75,4 @@ nav a:hover,
 nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
-}
-
-.services{
-    padding-top: 160px;
-    padding-bottom: 200px;
-    margin-top: 160px;
-
-}
-
-.services .boxes{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-}
-.services .boxes .box{
-    margin: 20px 0;
-    width: calc(100% /3 - 20px);
-    text-align: center;
-    border-radius:12px;
-    padding: 30px 10px;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.12);
-    cursor:default;
-    color:white;
-    transition:all 0.4s ease;
-}
-.services .boxes .box:hover{
-    background:#b74b4b;
-    color: #fff;
-}
-.services .boxes .box .icon{
-    height:50px;
-    width:50px;
-    background:#b74b4b;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    color:#fff;
-    margin: 0 auto 10px auto;
-    transition: all 0.4 ease;
-}
-.boxes .box:hover .icon{
-    background-color: #fff;
-    color: #b74b4b;
-}
-.services .boxes .box:hover .topic, .services .boxes .box:hover p{
-    color:#fff;
 }

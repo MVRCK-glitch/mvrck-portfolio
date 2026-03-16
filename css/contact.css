@@ -37,7 +37,7 @@ header{
     z-index: 100;
 }
 
-.about-service {
+.about-contact {
     font-size: 40px;
     font-weight: bold;
 }
@@ -77,49 +77,72 @@ nav a.active{
     border-bottom: 3px solid #b74b4b;
 }
 
-.services{
+
+.contact{
     padding-top: 160px;
     padding-bottom: 200px;
+    text-align: center;
     margin-top: 160px;
-
 }
 
-.services .boxes{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
+.contact-subtitle{
+    font-size: 2.2rem;
+    color: #aaa;
+    margin-bottom: 8rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.services .boxes .box{
-    margin: 20px 0;
-    width: calc(100% /3 - 20px);
-    text-align: center;
-    border-radius:12px;
-    padding: 30px 10px;
-    box-shadow:0 5px 10px rgba(0, 0, 0, 0.12);
-    cursor:default;
-    color:white;
-    transition:all 0.4s ease;
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12rem;
+    max-width: 1500px;
+    margin: auto;
 }
-.services .boxes .box:hover{
-    background:#b74b4b;
-    color: #fff;
+
+.contact-info{
+    text-align: left;
 }
-.services .boxes .box .icon{
-    height:50px;
-    width:50px;
-    background:#b74b4b;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 50px;
-    font-size: 20px;
-    color:#fff;
-    margin: 0 auto 10px auto;
-    transition: all 0.4 ease;
+
+.info-box{
+    margin-bottom: 4rem;
 }
-.boxes .box:hover .icon{
-    background-color: #fff;
+
+.info-box h3{
     color: #b74b4b;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
 }
-.services .boxes .box:hover .topic, .services .boxes .box:hover p{
-    color:#fff;
+
+.info-box p{
+    font-size: 2rem;
+}
+
+.contact-form{
+    width: 650px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    background: #1f2937;
+    border-radius: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-form textarea{
+    height: 260px;
+    resize: none;
+}
+
+.btn{
+    font-size: 2rem;
+    background-color: #b74b4b;
+    padding: 3rem;
 }
