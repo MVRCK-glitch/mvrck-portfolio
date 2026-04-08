@@ -16,10 +16,10 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
     overflow-x: hidden;
     background-color: black;
     color: white;
+    padding-top: 80px;
 }
 
 header{
@@ -37,7 +37,7 @@ header{
     z-index: 100;
 }
 
-.about-experience {
+.about-education {
     font-size: 40px;
     font-weight: bold;
 }
@@ -75,4 +75,83 @@ nav a:hover,
 nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: #333;
+}
+
+.experience {
+    padding: 100px 9%;
+    background: black; 
+}
+
+.experience h1 {
+    font-size: 50px;
+    color: #000;
+}
+
+.experience h1 span {
+    color: #b74b4b;
+}
+
+.subtitle {
+    font-size: 24px;
+    max-width: 800px;
+    line-height: 1.7;
+    margin-top: 25px;
+    padding-bottom: 50px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center; /* center everything */
+    flex-wrap: wrap;
+    gap: 40px; /* spacing between cards */
+    margin-top: 40px;
+}
+
+.card {
+ background: #fff;
+    border: 2px solid #b74b4b;
+    border-radius: 18px;
+    padding: 50px;
+    width: 420px;  /* 🔥 bigger */
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    background: #b74b4b;
+    transform: translateY(-5px);
+}
+
+.card .date {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 18px;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #b74b4b;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.card:hover h2,
+.card:hover .date {
+    color: #fff;
 }

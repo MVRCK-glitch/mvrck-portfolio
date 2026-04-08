@@ -20,6 +20,8 @@ body{
     overflow-x: hidden;
     background-color: black;
     color: white;
+    margin: 0;
+    padding-top: 80px;
 }
 
 header{
@@ -28,13 +30,14 @@ header{
     top: 0;
     left: 0;
     width: 100%;
+    height: 80px;
     padding: 1rem 9%;
-    background-color: transparent;
+    background-color: black;
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .about-skills {
@@ -75,4 +78,103 @@ nav a:hover,
 nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
+}
+
+.skills{
+    background:black;
+    align-items: center;
+    padding: 120px 9% 80px;
+}
+
+.skills.content{
+    padding:40px 0;
+}
+
+.skills .skills-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.skills-details .text{
+    width:50%;
+}
+
+.skills-details p{
+    color: white;
+    text-align: justify;
+}
+
+.skills .skills-details .experience{
+    display:flex;
+    align-items:center;
+    margin:0 10px;
+}
+
+.skills-details .experience .num{
+    color:white;
+    font-size:200px;
+    padding-left: 10px;
+}
+.skills-details .experience .exp{
+    color:white;
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0 6px;
+}
+
+
+.skills-details .boxes{
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.skills-details .box{
+    width: calc(100%/2 - 20px);
+    margin:20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: transparent;
+}
+
+.skills-details .boxes .topic{
+    font-size: 50px;
+    color: #b74b4b;
+    margin-bottom: 10px;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.boxes span{
+    display: block;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+.topic{
+    font-size: 50px;
+    padding-left: 25px;
+}
+
+.fade-right{
+    font-size: 25px;
+    padding-left: 25px;
+}
+
+.skills-details .boxes .per{
+    font-size: 120px;
+    color:#b74b4b;
+    margin-left: 23px;
 }
