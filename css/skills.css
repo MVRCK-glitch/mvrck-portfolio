@@ -1,180 +1,480 @@
+/* =========================================
+   GOOGLE FONT IMPORT
+========================================= */
+
+/* Imports the Poppins font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
 *{
+    /* Removes default spacing */
     margin: 0;
     padding: 0;
+
+    /* Keeps width and height balanced */
     box-sizing: border-box;
+
+    /* Removes underline from links */
     text-decoration: none;
+
+    /* Removes borders */
     border: none;
+
+    /* Removes focus outlines */
     outline: none;
+
+    /* Applies Poppins font to all elements */
     font-family: 'Poppins', sans-serif;
 }
 
+
+/* =========================================
+   HTML SETTINGS
+========================================= */
+
 html{
+    /* Makes 1rem = 10px */
     font-size: 62.5%;
 }
 
+
+/* =========================================
+   BODY / WHOLE PAGE
+========================================= */
+
 body{
-    width: 100%;
-    height: 100vh;
+    width: 100%;              /* Full width */
+    height: 100vh;            /* Full screen height */
+
+    /* Prevents horizontal scrolling */
     overflow-x: hidden;
+
+    /* Background color */
     background-color: black;
+
+    /* Default text color */
     color: white;
+
     margin: 0;
+
+    /* Adds space for fixed header */
     padding-top: 80px;
 }
 
+
+/* =========================================
+   HEADER / NAVIGATION BAR
+========================================= */
+
 header{
     margin-top: 20px;
+
+    /* Keeps navbar fixed at top */
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
+
+    /* Header height */
     height: 80px;
+
+    /* Top-bottom and left-right spacing */
     padding: 1rem 9%;
+
     background-color: black;
+
+    /* Shadow effect */
     filter: drop-shadow(10px);
+
+    /* Aligns items horizontally */
     display: flex;
+
+    /* Pushes title left and nav right */
     justify-content: space-between;
+
+    /* Centers items vertically */
     align-items: center;
+
+    /* Keeps header above content */
     z-index: 1000;
 }
 
+
+/* =========================================
+   SKILLS TITLE
+========================================= */
+
 .about-skills {
+
+    /* Font size of "My Skills" */
     font-size: 40px;
+
+    /* Bold text */
     font-weight: bold;
 }
 
+
+/* =========================================
+   COLOR CLASSES
+========================================= */
+
+/* Red text color */
 .red {
     color: #b74b4b;
 }
 
+/* White text color */
 .white {
     color: white;
 }
 
+
+/* =========================================
+   LOGO
+========================================= */
+
 .logo{
+
+    /* Logo size */
     font-size: 3rem;
+
+    /* Logo color */
     color: #b74b4b;
+
+    /* Extra bold */
     font-weight: 800;
+
+    /* Mouse pointer on hover */
     cursor: pointer;
+
+    /* Smooth animation */
     transition: 0.5s ease;
 }
 
+/* Logo hover animation */
 .logo:hover{
+
+    /* Enlarges logo */
     transform: scale(1.1);
 }
 
+
+/* =========================================
+   NAVIGATION LINKS
+========================================= */
+
 nav a{
+
+    /* Link font size */
     font-size: 1.8rem;
+
+    /* Link color */
     color: white;
+
+    /* Space between links */
     margin-left: 4rem;
+
+    /* Medium bold */
     font-weight: 500;
+
+    /* Smooth hover transition */
     transition: 0.3s ease;
+
+    /* Invisible underline */
     border-bottom: 3px solid transparent;
 }
 
+
+/* Hover effect and active page */
 nav a:hover,
 nav a.active{
+
+    /* Changes color */
     color: #b74b4b;
+
+    /* Adds underline */
     border-bottom: 3px solid #b74b4b;
 }
 
+
+/* =========================================
+   SKILLS SECTION
+========================================= */
+
 .skills{
+
+    /* Black background */
     background:black;
+
+    /* Aligns items */
     align-items: center;
+
+    /* Top right-left bottom spacing */
     padding: 120px 9% 80px;
 }
 
+
+/* =========================================
+   SKILLS CONTENT
+========================================= */
+
 .skills.content{
+
+    /* Vertical padding */
     padding:40px 0;
 }
 
+
+/* =========================================
+   SKILLS DETAILS LAYOUT
+========================================= */
+
 .skills .skills-details{
+
+    /* Flexbox layout */
     display: flex;
+
+    /* Pushes items apart */
     justify-content: space-between;
+
+    /* Centers vertically */
     align-items: center;
+
+    /* Space between sections */
     gap: 50px;
 }
 
+
+/* =========================================
+   TEXT SECTION
+========================================= */
+
 .skills-details .text{
+
+    /* Takes 50% width */
     width:50%;
 }
 
+
+/* Paragraph styling */
 .skills-details p{
+
+    /* White text */
     color: white;
+
+    /* Justified alignment */
     text-align: justify;
 }
 
+
+/* =========================================
+   EXPERIENCE SECTION
+========================================= */
+
 .skills .skills-details .experience{
+
+    /* Flex layout */
     display:flex;
+
+    /* Vertical alignment */
     align-items:center;
+
+    /* Horizontal spacing */
     margin:0 10px;
 }
 
+
+/* =========================================
+   EXPERIENCE NUMBER
+========================================= */
+
 .skills-details .experience .num{
+
+    /* White color */
     color:white;
+
+    /* Very large number */
     font-size:200px;
+
+    /* Left spacing */
     padding-left: 10px;
 }
+
+
+/* =========================================
+   EXPERIENCE TEXT
+========================================= */
+
 .skills-details .experience .exp{
+
+    /* White text */
     color:white;
+
+    /* Left spacing */
     margin-left: 20px;
+
+    /* Font size */
     font-size: 50px;
+
+    /* Medium bold */
     font-weight: 500;
+
     margin: 0 6px;
 }
 
 
+/* =========================================
+   SKILL BOXES CONTAINER
+========================================= */
+
 .skills-details .boxes{
+
+    /* Container width */
     width: 45%;
+
+    /* Grid layout */
     display: grid;
+
+    /* 2 equal columns */
     grid-template-columns: repeat(2, 1fr);
+
+    /* Space between boxes */
     gap: 60px;
 }
 
+
+/* =========================================
+   INDIVIDUAL SKILL BOX
+========================================= */
+
 .skills-details .box{
+
+    /* Box width */
     width: calc(100%/2 - 20px);
+
+    /* Vertical spacing */
     margin:20px 0;
+
+    /* Flexbox layout */
     display: flex;
+
+    /* Vertical arrangement */
     flex-direction: column;
+
+    /* Align left */
     align-items: flex-start;
+
+    /* Transparent background */
     background: transparent;
 }
 
+
+/* =========================================
+   SKILL TITLE INSIDE BOX
+========================================= */
+
 .skills-details .boxes .topic{
+
+    /* Large text */
     font-size: 50px;
+
+    /* Red color */
     color: #b74b4b;
+
+    /* Space below */
     margin-bottom: 10px;
 }
 
+
+/* =========================================
+   GENERAL BOXES SETTINGS
+========================================= */
+
 .boxes{
+
+    /* Grid layout */
     display: grid;
+
+    /* 2 equal columns */
     grid-template-columns: repeat(2, 1fr);
+
+    /* Space between boxes */
     gap: 40px;
+
+    /* Width of container */
     width: 50%;
+
+    /* Center horizontally */
     margin: auto;
+
+    /* Center text */
     text-align: center;
 }
 
+
+/* =========================================
+   BOXES SPAN TEXT
+========================================= */
+
 .boxes span{
+
+    /* Display on new line */
     display: block;
+
+    /* Font size */
     font-size: 35px;
+
+    /* Top spacing */
     margin-top: 10px;
 }
 
+
+/* =========================================
+   GENERAL TOPIC CLASS
+========================================= */
+
 .topic{
+
+    /* Large text */
     font-size: 50px;
+
+    /* Left spacing */
     padding-left: 25px;
 }
+
+
+/* =========================================
+   DESCRIPTION PARAGRAPH
+========================================= */
 
 .fade-right{
+
+    /* Font size */
     font-size: 25px;
+
+    /* Left spacing */
     padding-left: 25px;
 }
 
+
+/* =========================================
+   PERCENTAGE TEXT
+========================================= */
+
 .skills-details .boxes .per{
+
+    /* Very large percentage text */
     font-size: 120px;
+
+    /* Red color */
     color:#b74b4b;
+
+    /* Left spacing */
     margin-left: 23px;
 }

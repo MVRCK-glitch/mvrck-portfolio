@@ -55,15 +55,19 @@
 
         <div class="contact-form">
 
-            <input type="text" placeholder="Name">
-            <textarea placeholder="Message"></textarea>
+            <form action="contact.php" method="POST">
 
-            <button class="btn">Contact Me</button>
+        <input type="text" name="name" placeholder="Name">
 
+        <textarea name="message" placeholder="Message"></textarea>
+
+        <button type="submit" class="btn">Contact Me</button>
+
+            </form>
         </div>
 
     </div>
 
 </section>
-
+<script src="../js/main.js"></script>
 </body>

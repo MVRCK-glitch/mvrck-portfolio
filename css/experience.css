@@ -1,5 +1,7 @@
+/* Import Google Font for modern clean typography */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+/* RESET DEFAULT STYLES */
 *{
     margin: 0;
     padding: 0;
@@ -10,18 +12,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Base font size for rem scaling (1rem = 10px) */
 html{
     font-size: 62.5%;
 }
 
+/* MAIN BODY STYLING */
 body{
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* prevent horizontal scroll */
     background-color: black;
     color: white;
-    padding-top: 80px;
+    padding-top: 80px; /* space for fixed header */
 }
 
+/* FIXED HEADER */
 header{
     margin-top: 20px;
     position: fixed;
@@ -32,24 +37,28 @@ header{
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* title left, nav right */
     align-items: center;
     z-index: 100;
 }
 
+/* PAGE TITLE STYLE */
 .about-education {
     font-size: 40px;
     font-weight: bold;
 }
 
+/* RED TEXT (My) */
 .red {
     color: #b74b4b;
 }
 
+/* WHITE TEXT (Experiences) */
 .white {
     color: white;
 }
 
+/* UNUSED LOGO STYLE (not in HTML) */
 .logo{
     font-size: 3rem;
     color: #b74b4b;
@@ -58,10 +67,12 @@ header{
     transition: 0.5s ease;
 }
 
+/* LOGO HOVER EFFECT */
 .logo:hover{
     transform: scale(1.1);
 }
 
+/* NAVIGATION LINKS */
 nav a{
     font-size: 1.8rem;
     color: white;
@@ -71,33 +82,39 @@ nav a{
     border-bottom: 3px solid transparent;
 }
 
+/* NAV HOVER EFFECT */
 nav a:hover,
 nav a.active{
     color: #b74b4b;
     border-bottom: 3px solid #b74b4b;
 }
 
+/* DUPLICATE BODY STYLE (OVERRIDES EARLIER ONE) */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: black;
-    color: #333;
+    color: #333; /* ⚠ overrides earlier white text */
 }
 
+/* EXPERIENCE SECTION WRAPPER */
 .experience {
-    padding: 100px 9%;
-    background: black; 
+    padding: 100px 9%; /* spacing around section */
+    background: black;
 }
 
+/* SECTION TITLE (not used directly in your HTML structure) */
 .experience h1 {
     font-size: 50px;
     color: #000;
 }
 
+/* HIGHLIGHT COLOR INSIDE TITLE */
 .experience h1 span {
     color: #b74b4b;
 }
 
+/* INTRO TEXT BELOW HEADER */
 .subtitle {
     font-size: 24px;
     max-width: 800px;
@@ -106,51 +123,58 @@ body {
     padding-bottom: 50px;
 }
 
-
+/* CARD CONTAINER (FLEX LAYOUT) */
 .cards {
     display: flex;
-    justify-content: center; /* center everything */
-    flex-wrap: wrap;
+    justify-content: center; /* center cards horizontally */
+    flex-wrap: wrap; /* allow wrapping to next line */
     gap: 40px; /* spacing between cards */
     margin-top: 40px;
 }
 
+/* INDIVIDUAL CARD STYLE */
 .card {
- background: #fff;
+    background: #fff;
     border: 2px solid #b74b4b;
     border-radius: 18px;
     padding: 50px;
-    width: 420px;  /* 🔥 bigger */
-    transition: 0.3s ease;
+    width: 420px; /* fixed card size */
+    transition: 0.3s ease; /* smooth hover effect */
 }
 
+/* CARD HOVER EFFECT */
 .card:hover {
     background: #b74b4b;
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* lifts card up */
 }
 
+/* DATE TEXT INSIDE CARD */
 .card .date {
     font-size: 16px;
     color: #777;
     margin-bottom: 18px;
 }
 
+/* JOB TITLE */
 .card h2 {
     font-size: 28px;
     color: #b74b4b;
     margin-bottom: 10px;
 }
 
+/* SUBTITLE (TOOLS USED) */
 .card h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
+/* DESCRIPTION TEXT */
 .card p {
     font-size: 17px;
     line-height: 1.7;
 }
 
+/* CHANGE TEXT COLOR ON HOVER (TITLE + DATE ONLY) */
 .card:hover h2,
 .card:hover .date {
     color: #fff;
